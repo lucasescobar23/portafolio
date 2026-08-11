@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8; 
+    --primary-color: #38bdf8;
+    --accent-color: #0284c7;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem 8%;
+    background: rgba(15, 23, 42, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.navbar a {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-left: 1.2rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+section {
+    padding: 5rem 8% 3rem;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.titulo-seccion span {
+    color: var(--primary-color);
+}
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-inicio h1 {
+    font-size: 2.5rem;
+    line-height: 1.2rem;
+}
+
+.contenido-inicio h1 span {
+    color: var(--primary-color);
+}
+
+.contenido-inicio h3 {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin: 0.5rem 0 1rem;
+}
+
+.contenido-inicio p {
+    max-width: 600px;
+    color: var(--text-muted)
+    margin-bottom: 1.5rem;
+}
+
+.redes a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: var(--card-bg);
+    border: 1px solid #334155;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.contenedor-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.skill-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.proyecto-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #334155;
+}
+
+.proyecto-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.proyecto-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: #0f172a;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    border: 1px solid #334155;
+}
+
+.botones-proyecto {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid #334155;
+}
+
+.proximamente {
+    opacity: 0.6;
+    border-style: dashed;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 8%;
+    background: #090d16;
+    border-top: 1px solid #334155;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.links-footer a {
+    color: var(--primary-color);
+}
